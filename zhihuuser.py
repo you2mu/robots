@@ -65,9 +65,9 @@ class Zhihu:
     def login(self) :
         data = {
         '_xsrf': self.xsrf,
-        'password':'yl4321',  #parements
+        'password':'yourpassword',  #parements
         'remember_me':'true',
-        'phone_num':'18428300770'}
+        'phone_num':'yourphone'}
         try:
             lgiresp = self.session.post('https://www.zhihu.com/login/phone_num',data=data)
         except:
